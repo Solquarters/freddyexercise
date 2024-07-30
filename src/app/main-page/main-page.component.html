@@ -1,0 +1,27 @@
+
+@for(post of posts; track $index){
+    <div class="singlePostMainDivClass">
+        {{post.name}}
+        <br>
+        <img src="{{post.image}}" alt="">
+        <br>
+        <div class="likeDivClass">
+
+            @if(post.isLiked){
+                <img src="./../../assets/img/heart-red.png" alt=""  class="likeIconClass">
+            }
+            @else{
+                <img src="./../../assets/img/heart-black.png" alt=""  class="likeIconClass">
+            }
+
+
+            {{post.likes}}
+        </div>
+        
+        <br>
+        <br>
+
+    </div>
+
+
+}
