@@ -38,7 +38,9 @@ export class MainPageComponent {
 ];
 
 like(index: number){
-  this.posts[index].isLiked = !this.posts[index].isLiked
+  this.posts[index].isLiked = !this.posts[index].isLiked;
+  if(this.posts[index].isLiked){this.posts[index].likes++;}
+  else{this.posts[index].likes--;}
 }
 
 

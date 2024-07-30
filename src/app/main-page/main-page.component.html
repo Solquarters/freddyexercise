@@ -8,10 +8,10 @@
         <div class="likeDivClass">
 
             @if(post.isLiked){
-                <img src="./../../assets/img/heart-red.png" alt=""  class="likeIconClass">
+                <img src="./../../assets/img/heart-red.png" alt=""  class="likeIconClass" (click)="like($index)">
             }
             @else{
-                <img src="./../../assets/img/heart-black.png" alt=""  class="likeIconClass">
+                <img src="./../../assets/img/heart-black.png" alt=""  class="likeIconClass" (click)="like($index)">
             }
 
 
@@ -25,3 +25,5 @@
 
 
 }
+
+<a href="contacts">contacts</a>
