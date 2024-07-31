@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SinglePostComponent } from './single-post/single-post.component';
 
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [],
+  imports: [SinglePostComponent],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })
@@ -37,11 +38,7 @@ export class MainPageComponent {
 }
 ];
 
-like(index: number){
-  this.posts[index].isLiked = !this.posts[index].isLiked;
-  if(this.posts[index].isLiked){this.posts[index].likes++;}
-  else{this.posts[index].likes--;}
-}
+
 
 
 

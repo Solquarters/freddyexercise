@@ -1,0 +1,24 @@
+
+
+<div class="singlePostMainDivClass">
+    {{singlePost.name}}
+    <br>
+    <img src="{{singlePost.image}}" alt="">
+    <br>
+    <div class="likeDivClass">
+
+        @if(singlePost.isLiked){
+            <img src="./../../assets/img/heart-red.png" alt=""  class="likeIconClass" (click)="like()">
+        }
+        @else{
+            <img src="./../../assets/img/heart-black.png" alt=""  class="likeIconClass" (click)="like()">
+        }
+
+
+        {{singlePost.likes}}
+    </div>
+    
+    <br>
+    <br>
+
+</div>
