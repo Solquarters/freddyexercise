@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { SinglePost } from '../../interfaces/singlepost.interface';
 
 
 @Component({
@@ -11,13 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class SinglePostComponent {
 
-@Input()singlePost: {
-  name: string;
-  image: string;
-  likes: number;
-  isLiked: boolean;
-  comments: Array<{name:string, text:string}>;
-} = {
+@Input()singlePost: SinglePost = {
   name: "X",
   image: "./../../assets/img/banana.jpg",
   likes: 10000,
@@ -40,6 +35,7 @@ inputData = "";
 
 
     addComment(){
+      if(this.inputData == ''){return;}
       this.singlePost.comments.push({name:"User", text: this.inputData})
       this.inputData = '';
     }

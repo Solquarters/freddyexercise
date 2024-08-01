@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SinglePostComponent } from './single-post/single-post.component';
+import { SinglePost } from '../interfaces/singlepost.interface';
 
 @Component({
   selector: 'app-main-page',
@@ -10,13 +11,7 @@ import { SinglePostComponent } from './single-post/single-post.component';
 })
 export class MainPageComponent {
 
-  posts: {
-    name: string;
-    image: string;
-    likes: number;
-    isLiked: boolean;
-    comments: Array<{name:string, text:string}>;
-}[] = [
+  posts: SinglePost[] = [
 {
   name: "Brother",
   image: "./../../assets/img/banana.jpg",

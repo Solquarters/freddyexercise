@@ -1,8 +1,9 @@
 
 
 <div class="singlePostMainDivClass">
-    {{singlePost.name}}
-    <br>
+    <div class="nameDivClass"><div class="gradientCircleDivClass"></div>&nbsp;{{singlePost.name}}</div>
+    
+   
     <img src="{{singlePost.image}}" alt="">
     <br>
     <div class="likeDivClass">
@@ -25,14 +26,14 @@
         } -->
     
     @for(comment of singlePost.comments; track $index){
-            <b>{{comment.name}}</b>: {{comment.text}}
-            <br>
+            <p class="spanClass"><b>{{comment.name}}</b>: {{comment.text}}</p>
+            
     }
         
     </div>
 
     <div class="addCommentDivClass">
-       <input type="text" [(ngModel)]="inputData"><button (click)="addComment()">post</button>
+       <input type="text" [(ngModel)]="inputData"><button (click)="addComment()">post comment</button>
 
     </div>
     

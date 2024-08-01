@@ -22,6 +22,44 @@ img{
 .commentsDivClass{
     border: 1px solid black;
     border-radius: 8px;
-    padding: 8px;
+    padding: 4px;
     font-size: 14px;
+
+    >p{
+        margin: 4px 0px 4px 0px;
+    }
+}
+
+.addCommentDivClass{
+    margin: 2px 0px 0px 0px;
+    >input{
+        border-radius: 8px 0px 0px 8px;
+        padding: 4px;
+        border: 1px solid black;
+        border-right: none;
+    }
+    >button{
+        padding: 4px;
+        border: 1px  solid black;
+        border-radius: 0px 8px 8px 0px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(255, 255, 255);
+            color:rgb(155, 155, 155)
+        }
+    }
+
+}
+
+.gradientCircleDivClass{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-image: radial-gradient( rgb(0, 255, 0), white 60%);
+    margin: 4px 0px 4px 0px;
+}
+
+.nameDivClass{
+    display: flex;
+    align-items: center;
 }
