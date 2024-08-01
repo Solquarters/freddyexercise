@@ -17,6 +17,19 @@
 
         {{singlePost.likes}}
     </div>
+    <div class="commentsDivClass">
+
+        <!-- Einzelne Kommentare: -->
+        <!-- @if(singlePost.comments){
+            {{singlePost.comments[0].name}}: {{singlePost.comments[0].text}}
+        } -->
+    
+    @for(comment of singlePost.comments; track $index){
+            <b>{{comment.name}}</b>: {{comment.text}}
+            <br>
+    }
+        
+    </div>
     
     <br>
     <br>

@@ -11,10 +11,11 @@ import { Component, Input } from '@angular/core';
 export class SinglePostComponent {
 
 @Input()singlePost = {
-  name: "Brother",
+  name: "X",
   image: "./../../assets/img/banana.jpg",
-  likes: 37,
+  likes: 10000,
   isLiked: false,
+  comments: [{name: "John TestX", text: "Super!"},{name: "Petra", text: "wow"}]
 }
 
     // index muss von main page übergeben werden: 

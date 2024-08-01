@@ -15,12 +15,14 @@ export class MainPageComponent {
     image: string;
     likes: number;
     isLiked: boolean;
+    comments: Array<{name:string, text:string}>;
 }[] = [
 {
   name: "Brother",
   image: "./../../assets/img/banana.jpg",
   likes: 37,
   isLiked: false,
+  comments: [{name: "TestDude", text: "0.0"},{name: "John Test", text: "0.1"}]
 },
 
 {
@@ -28,6 +30,7 @@ export class MainPageComponent {
   image: "./../../assets/img/orange.jpg",
   likes: 105,
   isLiked: false,
+  comments: [{name: "Maria", text: "1.0"},{name: "Bro", text: "1.1"}]
 },
 
 {
@@ -35,6 +38,7 @@ export class MainPageComponent {
   image: "./../../assets/img/currant.jpg",
   likes: 1034,
   isLiked: false,
+  comments: [{name: "Lisa", text: "2.0"},{name: "Claude", text: "2.1"}]
 }
 ];
 

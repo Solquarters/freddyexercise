@@ -1,7 +1,7 @@
 
-@for(post of posts; track $index){
+@for(elementOfPostJsonObject of posts; track $index){
     
-<app-single-post [singlePost]="post"></app-single-post>
+<app-single-post [singlePost]="elementOfPostJsonObject"></app-single-post>
 
 }
 
