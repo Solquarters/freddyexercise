@@ -38,6 +38,10 @@ export class MainPageComponent {
 ];
 
 
+addCommentParent(comment: string, index: number){
+  // this.SERVICE.SERVICEFUNCTION(comment, index)
+  console.log(comment,index);
+}
 
 
 

@@ -1,8 +1,8 @@
 
 @for(elementOfPostJsonObject of posts; track $index){
     
-<app-single-post [singlePost]="elementOfPostJsonObject"></app-single-post>
+<app-single-post [singlePost]="elementOfPostJsonObject" (commentOutput)="addCommentParent($event, $index)"></app-single-post>
 
 }
 
-<a href="contacts">contacts</a>
+<a href="contacts">contacts</a><div></div>
